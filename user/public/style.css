@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+a {
+    color: white;
+    font-size: 16.5px;
+
+}
+
+.text {
+    color: white;
+    opacity: 0.5;
+}
+
+.slidemenu {
+    background-color: #1e1e2d;
+    width: 300px;
+    padding: 20px;
+    min-height: 100vh
+}
+
+
+.nav {
+    list-style-type: none;
+    padding: 10px;
+
+
+}
+
+.nav li a {
+    display: block;
+    color: #b5b5c3;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav li a:hover {
+    background-color: #2a2a3c;
+    color: #ffffff;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.toggle-submenu .icon.up {
+    transform: rotate(180deg);
+}
+header{
+    display: flex;
+    background-color: #1e1e2d;  
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    width: 100%;
+}
+.leff,.deff {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.leff ul,
+.deff ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Sử dụng 100% chiều cao của header */
+  line-height: 60px; /* Căn giữa các phần tử theo chiều cao */
+}
+
+.leff li,
+.deff li {
+  margin-right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.leff input {
+    border: none;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 40px; /* Đặt chiều cao cố định cho ô tìm kiếm */
+    line-height: 40px; /* Căn giữa ô tìm kiếm theo chiều cao */
+  }
+
+  .deff {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .deff ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 60px; /* Căn giữa các phần tử theo chiều cao */
+  }
+  
+  .deff li {
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .deff a {
+    color: #ffffff;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .deff .xyz {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .deff .xyz img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+  }
+.her{
+    width: 100%;
+    
+}
+
+
+.rimary{
+  width:100%;
+  height :300px;
+  background-color:#2a2a3c;
+}
